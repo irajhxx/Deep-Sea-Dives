@@ -1,0 +1,402 @@
+/*Main CSS for all pages*/
+body {
+    font-family: "Nunito", sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow: auto;
+    padding: 20px;
+    text-align: center; 
+    background: #000; 
+    min-height: 100%;
+    cursor: none;
+}
+
+::selection {
+    background-color: #8ecae6;
+    color: #03045e;
+}
+
+h1 {
+    color: #ddb892;
+    font-size: 1.5rem;
+    font-weight: 100;
+}
+
+h2 {
+    color: #ddb892;
+    font-size: 1.5rem;
+    font-weight: 100;
+    font-family: 'Signika', sans-serif;
+}
+
+p {
+    color: #ff9f1c;
+    font-size: 1.125rem;
+    line-height: 2.0;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+#fish {
+    color: #ff9f1c;
+    font-size: 1.125rem;
+    line-height: 2.0;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-decoration: underline;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+    width: 80%;
+    max-width: 400px;
+}
+
+#heading1 {
+    font-family: "Signika", sans-serif;
+    font-weight: 600;
+    font-size: 2em;
+    margin-bottom: 20px;
+    font-size: 100;
+    font-style: normal;
+    text-align: center;
+}
+
+#heading2 {
+    font-family: "Signika", sans-serif;
+    font-weight: 400;
+    font-size: 80px;
+    margin-bottom: 20px;
+    font-size: 100;
+    font-style: normal;
+    text-align: center;
+}
+
+#para1 {
+    color: #f0ebd8;
+    font-family: "Signika", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    margin-bottom: 20px;
+    font-size: 100;
+    font-style: normal;
+    text-align: center;
+    align-items: center;
+}
+
+#para1div1 {
+    max-width: 1100px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#para2div1 {
+    color: #ddb892;
+    font-family: "Signika", sans-serif;
+    font-weight: 500;
+    font-size: 30px;
+}
+
+
+/* Navbar CSS */
+#mainNavbar {    
+    font-size: 1.5rem;
+    font-weight: 100;
+}
+
+#mainNavbar .nav-link {
+    color: white;
+}
+
+#mainNavbar .nav-link:hover {
+    color: #03045e;
+}
+
+#mainNavbar .navbar-brand {
+    color: #03045e;
+    font-size: 1.5rem;
+}
+
+.navbar.scrolled {
+    background: #ffbf69;
+    transition: background 890ms;
+}
+
+@media (max-width: 1200px) {
+    #headingGroup h1 {
+        font-weight: 100;
+        font-size: 3rem;
+    }
+}
+
+
+/* Interactive Ocean Zone Image CSS */
+.container {
+    position: relative;
+    width: 100%;
+    max-width: 750px;
+    margin: 0 auto;
+    padding: 20px;
+}
+#mainimg1 {
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+}
+.info {
+    display: none;
+    padding: 15px;
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    margin-top: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.info h2 {
+    margin-top: 0;
+}
+
+#title1 {
+    font-family: "Signika", sans-serif;
+    font-weight: 600;
+}
+
+
+/* Volcano Eruption CSS */
+.volcano-text-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px; 
+    max-width: 1200px;
+    margin: 0 auto; 
+}
+
+.volcano-container {
+    flex: 1;
+    padding-right: 20px; 
+}
+
+.volcano {
+    width: 100%;
+    height: auto;
+    animation: eruption 2s infinite;
+}
+
+@keyframes eruption {
+    0% { transform: scale(1); opacity: 1; }
+    50% { transform: scale(1.05); opacity: 0.8; }
+    100% { transform: scale(1); opacity: 1; }
+}
+
+.text-container {
+    flex: 1;
+    padding-left: 20px; 
+    font-size: 18px; 
+    text-align: left;  
+}
+
+#uwvolcano1 {
+    color: #f0ebd8;
+}
+
+#uwvolcano2 {
+    text-decoration: underline;
+    color: #f0ebd8;
+}
+
+#coraltext {
+    color: #f0ebd8;
+}
+
+#headingthree {
+    color: #ddb892;
+    font-family: "Indie Flower", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 60px;
+    margin-bottom: 20px;
+    width: 1000px;
+}
+
+#OLp {
+    width: 1000px;
+    color: #f0ebd8;
+}
+
+#OLp2 {
+    width: 1000px;
+    color: #b07d62;
+}
+
+.text-and-image-boxes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+    width: 80%;
+    max-width: 400px;
+}
+
+.text-box {
+    width: 100%;
+    height: 100px;
+    font-size: 1em;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 2px solid #618985;
+    border-radius: 5px;
+}
+
+.image-box img {
+    width: 100%;
+    height: auto;
+    border: 2px solid #ff9f1c;
+    border-radius: 3px;
+}
+
+/* Marine Microbial Energy CSS */
+.container1 {
+    width: 1100px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.6); 
+}
+
+.image-row1 {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.image-row1 img {
+    width: 49%;
+    height: 350px;
+    border: 1px solid #fefae0;
+    border-radius: 4px;
+    padding: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.text-row1a {
+    display: flex;
+    justify-content: space-between;
+}
+
+.text-block1a {
+    width: 32%;
+    padding: 10px;
+    border: 1px solid #fefae0;
+    border-radius: 4px;
+    background-color: #fefae0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.text-block1a p {
+    text-align: left; 
+    color: #03045e;
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.6; 
+    word-spacing: normal; 
+}
+
+
+#span1 {
+    color: #03045e;
+    margin: 0;
+    text-align: justify;
+    font-size: 16px;
+    text-decoration: underline;
+}
+
+.link2:hover {
+    text-decoration: underline;
+}
+
+
+/*Stars Background*/
+.starry-background {
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh; 
+    background: transparent;
+    z-index: -1;
+    overflow: hidden;
+}
+
+.content {
+    position: relative;
+    padding: 20px;
+    color: white;
+    background: rgba(0, 0, 0, 0.6); 
+}
+
+.star {
+    position: absolute;
+    border-radius: 50%;
+    background: white;
+    opacity: 0.8;
+    animation: twinkle 1.5s infinite;
+}
+
+@keyframes twinkle {
+    0% { opacity: 0.8; }
+    50% { opacity: 1; }
+    100% { opacity: 0.8; }
+}
+
+
+/*Cursor*/
+button, a, .container, #mainimg1 {
+    cursor: none;
+    outline: none;
+}
+
+#cursor {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: #ffbf69;
+    border-radius: 50%;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+    border: 3px solid transparent;
+    transition: all 0.1s ease;  
+}
+
+#cursor.hovered {
+    width: 40px;
+    height: 40px;
+}
+
+#cursor.clicked {
+    background-color: #03045e;
+    width: 50px;
+    height: 50px;
+    border-color: transparent;
+}
+
+
+
+
+
+
+
+
+
+
+
+

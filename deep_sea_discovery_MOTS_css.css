@@ -1,0 +1,359 @@
+/* Main CSS for all pages */
+/* , html  */
+body{
+    background-color: #001845;
+    font-family: "Nunito", sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    text-align: center; 
+    align-items: center;
+    cursor: none;
+}
+
+::selection {
+    background-color: #ffbf69;
+    color: #001845;
+} 
+
+p {
+    color: #e1e1e1;
+    font-size: 1.125rem;
+    line-height: 2.0;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.bmlists {
+    color: #e1e1e1;
+    font-size: 1.125rem;
+    line-height: 2.0;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.content {
+    margin-top: 100px;
+}
+
+@media (max-width: 1200px) {
+    #headingGroup h1 {
+        font-weight: 100;
+        font-size: 3rem;
+    }
+}
+
+
+/* Navbar CSS */
+#mainNavbar {
+    font-size: 1.5rem;
+    font-weight: 100;
+}
+
+#mainNavbar .nav-link {
+    color: white;
+}
+
+#mainNavbar .nav-link:hover {
+    color: #03045e;
+}
+
+#mainNavbar .navbar-brand {
+    color: #03045e;
+    font-size: 1.5rem;
+}
+
+#headingGroup span {
+    color: #03045e;
+}
+
+#headingGroup h1 {
+    font-weight: 100;
+    font-size: 4rem;
+}
+
+.navbar.scrolled {
+    background: #ffbf69;
+    transition: background 890ms;
+}
+
+
+/* Entry */
+.section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #001845;
+}
+
+#section1 {
+    background-image: url('marianatrench1.png');
+    background-color: #001845;
+}
+
+#section2 {
+    background-image: url('bermudatriangle1.png');
+    background-color: #001845;
+}
+
+#section3 {
+    background-image: url('titanicsinking1.png');
+    background-color: #001845;
+}
+
+.text {
+    font-size: 70px;
+    color: white;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+    text-align: center;
+    padding: 0 20px;
+    font-family: "Anton", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #001845;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.content {
+    padding: 20px;
+    background-color: #001845;
+    height: 100vh;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.fade-in {
+    opacity: 1 !important;
+}
+
+
+/* Other */
+#heading1 {
+    color: #e1e5f2;
+    font-family: "Signika", sans-serif;
+    font-weight: 600;
+    font-size: 2em;
+    margin-bottom: 20px;
+    font-size: 100;
+    font-style: normal;
+    text-align: center;
+}
+
+#heading2 {
+    color: #e1e5f2;
+    font-family: "Signika", sans-serif;
+    font-weight: 400;
+    font-size: 80px;
+    margin-bottom: 20px;
+    font-size: 100;
+    font-style: normal;
+    text-align: center;
+}
+
+.location-box1 {
+    align-items: center;
+    background-color: #152d6e;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    text-align: left;
+}
+
+.location-box1 h2 {
+    align-items: center;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.location-box1 ul {
+    align-items: center;
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+.image-box img {
+    width: 100%;
+    height: auto;
+    border: 2px solid #ff9f1c;
+    border-radius: 3px;
+}
+
+/*Normal Page*/
+.container3 {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px; 
+    max-width: 1200px;
+    padding: 20px;
+}
+
+.container3padding {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px; 
+    max-width: 1200px;
+    padding-right: 40px;
+}
+
+.container1 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 60px; 
+    width: 1500px;
+    padding: 20px;
+}
+
+.info-box2 h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #ffffff; 
+}
+
+.info-box2 p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 10px;
+    color: #d3d3d3; 
+}
+
+.info-box2 li {
+    font-size: 16px;
+    color: #d3d3d3; 
+}
+
+.info-box1 h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #ffffff; 
+}
+
+.info-box1 p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 10px;
+    color: #d3d3d3; 
+}
+
+.info-box1 li {
+    font-size: 16px;
+    color: #d3d3d3; 
+}
+
+@media (max-width: 768px) {
+    .container1 {
+        grid-template-columns: 1fr; 
+    }
+}
+
+@media (max-width: 768px) {
+    .container3 {
+        grid-template-columns: 1fr; 
+    }
+}
+
+@media (max-width: 768px) {
+    .container3padding {
+        grid-template-columns: 1fr; 
+    }
+}
+
+/* Info Boxes */
+.info-box2 {
+    width: 400px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    text-align: left;
+    min-height: 300px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color:#faa307;
+    border: 2px solid;
+    padding: 1em 2em;
+    font-size: 1em;
+    transition: color 0.25s, border-color 0.25s, box-shadow 0.25s,transform 0.25s;
+}
+
+.info-box2:hover {
+    border-color: #ffea00;
+    color: white;
+    box-shadow: 0 0.5em 0.5em -0.4em #ffea00;
+    transform: translateY(-0.25em);
+}
+
+.info-box3 { 
+    width: 350px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    text-align: left;
+    min-height: 300px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color:#faa307;
+    border: 2px solid;
+    padding: 1em 2em;
+    font-size: 1em;
+    transition: color 0.25s, border-color 0.25s, box-shadow 0.25s,transform 0.25s;
+} 
+
+.info-box3:hover {
+    border-color: #ffea00;
+    color: white;
+    box-shadow: 0 0.5em 0.5em -0.4em #ffea00;
+    transform: translateY(-0.25em);
+}
+
+
+/*Cursor*/
+button, a {
+    cursor: none;
+    outline: none;
+}
+
+#cursor {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: #ffbf69;
+    border-radius: 50%;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+    border: 3px solid transparent;
+    transition: all 0.1s ease;  
+}
+
+#cursor.hovered {
+    width: 40px;
+    height: 40px;
+}
+
+#cursor.clicked {
+    background-color: #03045e;
+    width: 50px;
+    height: 50px;
+    border-color: transparent;
+}
+

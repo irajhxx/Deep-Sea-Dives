@@ -1,0 +1,279 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to top, #74af74, #3a573a);
+    cursor: none;
+    align-items: center;
+    text-align: center;
+    overflow-x: hidden;
+}
+
+::selection {
+    background-color: #8ecae6;
+    color: #03045e;
+}
+
+p {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+}
+
+.header {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.heading {
+    color: #ffbb66;
+    font-size: 3em;
+    font-weight: 400;
+    font-family: 'Signika', sans-serif;
+}
+
+.header p {
+    font-size: 1.2em;
+    color: #ffbb66;
+}
+
+.grid-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 20px auto;
+    max-width: 1200px;
+}
+
+.event-card {
+    background-color: #f0ebd8;
+    color: #111;
+    width: 200px;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.event-card .date {
+    font-size: 3em;
+    font-weight: 700;
+    font-family: "Poppins", sans-serif;
+}
+
+.event-card .month {
+    font-size: 1.2em;
+    font-weight: 600;
+    color: #000;
+    font-family: "Poppins", sans-serif;
+}
+
+.event-card .title {
+    margin-top: 10px;
+    font-size: 1em;
+    font-family: "Poppins", sans-serif;
+}
+
+.targets {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin: 40px auto;
+    max-width: 1000px;
+}
+
+.target {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 900px;
+    opacity: 0;
+    transform: translateX(-100vw);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.target-content {
+    background-color: #ff6600;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+    width: 50%;
+    box-sizing: border-box;
+}
+
+.target h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    font-weight: 400;
+    font-family: 'Signika', sans-serif;
+    color: #000;
+}
+
+.target p {
+    font-size: 1em;
+    color: #eee;
+}
+
+.target-image {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-left: 20px;
+}
+
+.target.slide-in-left {
+    transform: translateX(-100vw);
+}
+
+.target.slide-in-right {
+    transform: translateX(100vw);
+}
+
+.target.visible {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+@media (max-width: 768px) {
+    .target {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .target-content {
+        width: 80%;
+    }
+
+    .target-image {
+        width: 100%;
+        height: 150px;
+        margin-left: 0;
+    }
+}
+
+
+/*Charities*/
+.event-card1 .month1 {
+    font-size: 1.2em;
+    font-weight: 600;
+    color: #fff;
+    font-family: 'Signika', sans-serif;
+    text-align: center;
+}
+
+.event-card1 {
+    font-weight: 400;
+    font-family: 'Signika', sans-serif;
+    background-color: #ff6600;
+    padding: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    color: #f0ebd8;
+    font-weight: bold;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 200px; 
+    height: 130px;
+    transition: transform 0.3s ease;
+}
+
+.event-card1:hover {
+    transform: scale(1.1);
+}
+
+.charity-titles {
+    font-family: 'Signika', sans-serif;
+    font-weight: 600;
+}
+
+.info-box1 {
+    display: none;
+    background-color: #f0ebd8;
+    color: black;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    width: 60%;
+    max-width: 400px;
+}
+
+.info-box1 a {
+    display: block;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #ff6600;
+    font-weight: bold;
+    font-family: "Poppins", sans-serif;
+}
+
+
+/* Navbar*/
+#mainNavbar {    
+    font-size: 1.5rem;
+    font-weight: 100;
+}
+
+#mainNavbar .nav-link {
+    color: white;
+}
+
+#mainNavbar .nav-link:hover {
+    color: #03045e;
+}
+
+#mainNavbar .navbar-brand {
+    color: #03045e;
+    font-size: 1.5rem;
+}
+
+.navbar.scrolled {
+    background: #ffbf69;
+    transition: background 890ms;
+}
+
+@media (max-width: 1200px) {
+    #headingGroup h1 {
+        font-weight: 100;
+        font-size: 3rem;
+    }
+}
+
+
+/*Cursor*/
+button, a, .event-card, .event-card1 {
+    cursor: none;
+    outline: none;
+}
+
+#cursor {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: #ffbf69;
+    border-radius: 50%;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+    border: 3px solid transparent;
+    transition: all 0.1s ease;  
+}
+
+#cursor.hovered {
+    width: 40px;
+    height: 40px;
+}
+
+#cursor.clicked {
+    background-color: #03045e;
+    width: 50px;
+    height: 50px;
+    border-color: transparent;
+}
+

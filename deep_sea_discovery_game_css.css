@@ -1,0 +1,352 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    font-family: "Nunito", sans-serif;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    text-align: center;
+    background: linear-gradient(to bottom, #90e0efff, #00b4d8);
+    cursor: none;
+}
+
+
+/*Cursor*/
+button, a, #titles, #playAgain, #up, #down, #left, #right {
+    cursor: none;
+    outline: none;
+}
+
+#cursor {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: #ffbf69;
+    border-radius: 50%;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+    border: 3px solid transparent;
+    transition: all 0.1s ease;  
+}
+
+#cursor.hovered {
+    width: 40px;
+    height: 40px;
+}
+
+#cursor.clicked {
+    background-color: #03045e;
+    width: 50px;
+    height: 50px;
+    border-color: transparent;
+}
+
+
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; 
+    overflow: hidden;
+}
+
+.sky {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 50%;
+}
+
+.wave {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 50%;
+    height: 200px;
+    background: #ffab40;
+}
+
+#content {
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center; 
+}
+
+::selection {
+    background-color: #8ecae6;
+    color: #03045e;
+}
+
+.game-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+}
+
+canvas {
+    background-color: #cbf3f0;
+    border: 1px solid #0abde3;
+}
+
+#score, #highScore {
+    margin-top: 10px;
+    font-size: 24px;
+}
+
+.text {
+    color: #0077b6;
+    font-size: 1.125rem;
+    line-height: 2.0;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.title {
+    color: #0077b6;
+    line-height: 2.0;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.button1 {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.button1:hover {
+    background-color: #45a049;
+}
+
+
+/*Keypad*/
+#keypadalignment {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.keypad {
+  display: grid;
+  grid-template-columns: 100px 100px 100px;
+  gap: 10px;
+  padding-left: 20px;
+}
+
+.key {
+  width: 70px;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #2f4f4f;
+  background-color: #cbf3f0;
+  border: 2px solid #0abde3;
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+  user-select: none;
+  transition: background-color 0.3s;
+}
+
+.key:hover {
+  background-color: #34ace0;
+}
+
+.pressed {
+  background-color: #0abde3 !important;
+}
+
+
+/*Facts on Sea Snakes*/
+h2 {
+    background-color: #f0efeb;
+    color: #0077b6;
+    font-size: 40px;
+    font-weight: 100;
+}
+
+#titles {
+    font-family: "Signika", sans-serif;
+    font-weight: 600;
+    font-size: 40px;
+    width: 400px;
+    color: #f0efeb;
+    font-size: 1.5rem;
+    font-weight: 100;
+}
+
+#titles:hover {
+    text-decoration: none;
+
+}
+
+#gameCont {
+    padding-left: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center;
+}
+
+#click {
+    background-color: #0077b6;
+    border-color: #0077b6;
+}
+
+#cardHeader {
+    text-align: center;
+    border-radius: 10rem;
+
+}
+
+.image-box img {
+    width: 100%;
+    height: 200px;
+    border: 2px solid #ff9f1c;
+    border-radius: 3px;
+}
+
+.note {
+    color: #0077b6;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.info-box {
+    flex: 1;
+    background-color: #f0efeb;
+    height: 860px;
+    width: 800px;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.facts {
+    padding-left: 100px;
+    padding-top: 40px;
+}
+
+.info-box h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    font-family: "Signika", sans-serif;
+    font-weight: 400;
+    font-size: 40px;
+}
+
+.snake1 {
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    color: #343a40;
+}
+
+span {
+    color: #48cae4;
+}
+
+.seasnakes {
+    font-family: "Signika", sans-serif;
+    color: #a47e1b;
+    font-weight: 400;
+    font-size: 30px;
+}
+
+/*Crabs*/
+.crab {
+    position: absolute;
+    bottom: 0; 
+    width: 100px;
+    height: 100px;
+    background-image: url('crab.png'); 
+    background-size: cover;
+    animation: moveCrab 10s linear infinite; 
+}
+
+#crab1 {
+    left: -40px;
+    animation-delay: 0s; 
+}
+
+#crab2 {
+    left: 100px;
+    animation-delay: 2s; 
+}
+
+#crab3 {
+    left: 250px;
+    animation-delay: 4s; 
+}
+
+@keyframes moveCrab {
+    0% {
+        transform: translateX(0); 
+    }
+    100% {
+        transform: translateX(100vw); 
+    }
+}
+
+
+/* Navbar CSS */
+#mainNavbar {
+    font-size: 1.5rem;
+    font-weight: 100;
+}
+
+#mainNavbar .nav-link {
+    color: white;
+}
+
+#mainNavbar .nav-link:hover {
+    color: #03045e;
+}
+
+#mainNavbar .navbar-brand {
+    color: #03045e;
+    font-size: 1.5rem;
+}
+
+#headingGroup span {
+    color: #03045e;
+}
+
+#headingGroup h1 {
+    font-weight: 100;
+    font-size: 4rem;
+}
+
+.navbar.scrolled {
+    background: #ffbf69;
+    transition: background 890ms;
+}
+
+

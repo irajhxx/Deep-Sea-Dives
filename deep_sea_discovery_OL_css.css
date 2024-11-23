@@ -1,0 +1,451 @@
+body {
+    font-family: "Nunito", sans-serif;
+    margin: 0;
+    padding: 20px;
+    color: #333;
+    line-height: 1.5;
+    min-height: 100vh; 
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    background: linear-gradient(to top left, #0077b6, #ade8f4);
+    background-attachment: fixed;
+    background-size: cover;
+    overflow: auto;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    text-align: center;
+    cursor: none;
+}
+
+/* Text Selection Color */
+::selection {
+    background-color: #8ecae6;
+    color: #03045e;
+}
+
+.a1 {
+    color: #e1e5f2;
+    font-size: 1.125rem;
+    line-height: 2.0;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    text-decoration: underline;
+}
+
+.a1:hover {
+    color: #ffc300;
+}
+
+.btnheading1 {
+    color: #faa307;
+    font-family: "Signika", sans-serif;
+    font-weight: 400;
+    font-size: 60px;
+    margin-bottom: 20px;
+}
+
+.btnheading2 {
+    color: #e1e5f2;
+    font-family: "Signika", sans-serif;
+    font-weight: 400;
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.firstheading {
+    color: white;
+    font-family: "Ribeye Marrow", serif;
+    text-shadow: black -6px 6px;
+    font-weight: 400;
+    font-size: 100px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#welcome1 {
+    font-family: "Pacifico", cursive;
+    font-size: 50px;
+    color: #f77f00;
+}
+
+#heading2 {
+    color: #03045e;
+    font-family: "Signika", sans-serif;
+    font-weight: 400;
+    font-size: 100px; 
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#heading3 {
+    color: #f77f00;
+    font-family: "Signika", sans-serif;
+    font-weight: 400;
+    font-size: 60px; 
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#heading4 {
+    color: #e1e5f2;
+    font-family: "Signika", sans-serif;
+    font-weight: 400;
+    font-size: 40px; 
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.headings {
+    color: #e1e5f2;
+    font-family: "Signika", sans-serif;
+    font-weight: 400;
+}
+
+.p2 {
+    color: #e1e5f2;
+    font-size: 1.125rem;
+    line-height: 2.0;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+}
+
+p {
+    color: #e1e5f2;
+    font-size: 1.125rem;
+    line-height: 2.0;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+}
+
+.lists {
+    color: #e1e5f2;
+    font-size: 1.125rem;
+    line-height: 2.0;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+}
+
+
+/* Button Styles */
+.btn1 {
+    z-index: 10;
+    position: relative;
+    font-size: 2rem;
+    font-weight: 600;
+    padding: 1.75rem 3.5rem;
+    margin: 5rem 2rem;
+    border: none;
+    color: #fff;
+    border-radius: 10rem;
+    cursor: pointer;
+    background-color: #f77f00;
+    transition: background-color 1s ease-in, border-radius 1s;
+}
+
+.btn1:hover {
+    background-color: #ffe45e;
+    border-radius: 50%;
+}
+
+
+/* Navbar*/
+#mainNavbar {    
+    font-size: 1.5rem;
+    font-weight: 100;
+}
+
+#mainNavbar .nav-link {
+    color: white;
+}
+
+#mainNavbar .nav-link:hover {
+    color: #03045e;
+}
+
+#mainNavbar .navbar-brand {
+    color: #03045e;
+    font-size: 1.5rem;
+}
+
+.navbar.scrolled {
+    background: #ffbf69;
+    transition: background 890ms;
+}
+
+
+/* Container Styles */
+.container1 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
+    gap: 30px; 
+    max-width: 1200px;
+    width: 100%;
+    padding: 0 20px; 
+    margin: 0 auto;
+}
+
+.container3 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
+    gap: 30px; 
+    max-width: 1200px; 
+    width: 100%;
+    padding: 0 20px; 
+    margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+    .container1, .container3 {
+        grid-template-columns: 1fr; 
+        gap: 20px;
+    }
+
+    .info-box2, .info-box3 {
+        max-width: 100%;
+    }
+}   
+
+.info-box2, .info-box3 {
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: left;
+    min-height: 300px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: #faa307; 
+    border: 2px solid; 
+    padding: 1em 2em; 
+    font-size: 1em;
+    transition: color 0.25s, border-color 0.25s, box-shadow 0.25s, transform 0.25s; 
+}
+
+.info-box2 {
+    width: 400px; 
+}
+
+.info-box3 {
+    width: 350px; 
+    background: none; 
+}
+
+.info-box2:hover, .info-box3:hover {
+    border-color: #ffea00; 
+    color: white;
+    background-color: #03045e;
+    box-shadow: 0 0.5em 0.5em -0.4em #ffea00; 
+    transform: translateY(-0.25em); 
+}
+
+.info-content {
+    display: none; 
+}
+
+.info-box2:hover .info-content, .info-box3:hover .info-content {
+    display: block; 
+}
+
+.info-box2 h2, .info-box3 h2 {
+    font-family: "Signika", sans-serif; 
+    margin: 0; 
+    padding-bottom: 10px; 
+}
+
+.p2 {
+    margin: 0; /
+}
+
+.image-box img {
+    width: 100%;
+    height: auto;
+    border: 2px solid #ff9f1c;
+    border-radius: 3px;
+}
+
+
+/* Location Box1 Styles */
+.location-box1 {
+    background-color: #152d6e;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    text-align: left;
+}
+
+.location-box1 h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.location-box1 ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+
+/* Content Container Styles */
+.content-container {
+    text-align: center;
+    transition: opacity 0.5s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    opacity: 0;
+}
+
+.hidden {
+    display: none;
+}
+
+
+/* Whale Animation Container */
+.whale-container {
+    position: absolute;
+    bottom: -100px; 
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.whale {
+    width: 200px;
+}
+
+@keyframes whaleMove {
+    0% {
+        bottom: -200px;
+    }
+    50% {
+        bottom: 50%;
+    }
+    100% {
+        bottom: -200px;
+    }
+}
+
+.whale-container.animate {
+    animation: whaleMove 5s ease-in-out infinite;
+}
+
+.turtle {
+    width: 200px;
+    cursor: pointer;
+}
+
+.wave-container {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 150px;
+    overflow: hidden;
+}
+
+
+/*Waves*/
+.wave {
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="%23a9d6e5" fill-opacity="1" d="M0,256 C300,320 600,160 900,256 C1200,352 1500,160 1800,256 L1800,320 L0,320 Z"></path></svg>') repeat-x;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 200%; 
+    height: 100%;
+    animation: waveAnimation 10s linear infinite;
+}
+
+@keyframes waveAnimation {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+/*Cursor*/
+button, a, .turtle, .btn1 {
+    cursor: none;
+    outline: none;
+}
+
+#cursor {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: #ffbf69;
+    border-radius: 50%;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+    border: 3px solid transparent;
+    transition: all 0.1s ease;  
+}
+
+#cursor.hovered {
+    width: 40px;
+    height: 40px;
+}
+
+#cursor.clicked {
+    background-color: #03045e;
+    width: 50px;
+    height: 50px;
+    border-color: transparent;
+}
+
+
+/*Bottom Bar*/
+.bottom-bar {
+    background-color: #ffbf69;
+    color: black;
+    padding: 10px 0;
+    width: 100%;
+    width: 2000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    position: relative; 
+    margin-top: 50px;
+    font-family: "Nunito", sans-serif; 
+    font-weight: 700;
+}
+
+.bottom-bar p {
+    color: black;
+    text-decoration: none;
+    font-style: italic;
+    margin: 0 20px;
+    font-family: "Nunito", sans-serif; 
+}
+
+.left-section, .center-section, .right-section {
+    flex: 1;
+    font-family: "Nunito", sans-serif; 
+}
+
+.center-section {
+    text-align: center;
+    font-family: "Nunito", sans-serif; 
+}
+
+.left-section, .right-section {
+    text-align: left;
+    padding: 0 20px;
+    font-family: "Nunito", sans-serif; 
+}
+
+.bottom-bar {
+    font-family: "Nunito", sans-serif; 
+}
+
+.bottom-bar span {
+    margin: 0 20px;
+    font-family: "Nunito", sans-serif; 
+}
+
+.bottom-bar a {
+    text-decoration: underline;
+    color: black;
+}
+

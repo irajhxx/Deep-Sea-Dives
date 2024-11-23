@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--Meta Tags-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!--Google Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,300,400,700">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pacifico&family=Signika:wght@300..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+
+    <!--Bootstrap CSS-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+  crossorigin="anonymous">
+
+    <!--Custom CSS-->
+    <link rel="stylesheet" href="deep_sea_discovery_marine_biology_css.css"> 
+
+    <title>Marine Biology!</title>
+
+</head>
+<body>
+    <div id="cursor"></div>
+    <nav id="mainNavbar" class="navbar navbar-dark navbar-expand-md py-0 fixed-top">
+        <a href="deep_sea_dives_main.html" class="navbar-brand">SEA</a>
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#navLinks" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navLinks">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a href="deep_sea_dives_main.html" class="nav-link">HOME</a>
+                </li>
+                <li class="nav-item">
+                    <a href="deep_sea_discovery_ocean_life.html" class="nav-link">OCEAN LIFE</a>
+                </li>
+                <li class="nav-item">
+                    <a href="deep_sea_discovery_marine_biology.html" class="nav-link">MARINE BIOLOGY</a>
+                </li>
+                <li class="nav-item">
+                    <a href="deep-sea_discovery_MOTS.html" class="nav-link">MYSTERIES OF THE SEA</a>
+                </li>
+                <li class="nav-item">
+                    <a href="deep_sea_discovery_careers.html" class="nav-link">CAREERS</a>
+                </li>
+                <li class="nav-item">
+                    <a href="deep_sea_discovery_quiz.html" class="nav-link">QUIZ</a>
+                </li>
+                <li class="nav-item">
+                    <a href="deep_sea_discovery_game.html" class="nav-link">GAME</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <br>
+    <br>
+    <div class="starry-background">
+    </div>
+    <div class="content">
+
+    <br>
+    <br>
+    <h1 id="heading1" style="font-size: 130px;">Marine Biology</h1>
+    <br>
+    <br>
+    
+    <!--Ocean Zones-->
+    <h2 id="heading2">Ocean Zones</h2>
+    <br>
+    <div id="para1div1">
+        <p id="para1">The ocean zones are distinct layers based on depth and light availability, each hosting a unique variety of species. They include the Sunlight Zone, where most marine life thrives, 
+            the Twilight Zone with minimal light, the dark Midnight Zone, the Abyss Zone, and the deep Trenches Zone.</p>
+        <br>
+        <p id="para2div1">Click on any of the zones in the image below to see facts about each of the zones of the ocean!</p>
+    </div>
+
+    <div class="container">
+        <img id="mainimg1" src="oceanlayers.jpg" alt="Ocean Zones" usemap="#oceanmap">
+        <map name="oceanmap">
+            <area shape="rect" coords="0,0,750,50" alt="Epipelagic Zone" onclick="showInfo('epipelagic')">
+            <area shape="rect" coords="0,50,750,100" alt="Mesopelagic Zone" onclick="showInfo('mesopelagic')">
+            <area shape="rect" coords="0,100,750,150" alt="Bathypelagic Zone" onclick="showInfo('bathypelagic')">
+            <area shape="rect" coords="0,150,750,200" alt="Abyssopelagic Zone" onclick="showInfo('abyssopelagic')">
+            <area shape="rect" coords="0,200,750,250" alt="Hadal Zone" onclick="showInfo('hadal')">
+        </map>
+        <div id="epipelagic" class="info">
+            <h2 id="title1" style="color: #03045e;">Epipelagic Zone (The Sunlight Zone)</h2>
+            <p>The Sunlight Zone (Epipelagic Zone) runs from the surface of the ocean down to nearly 200 meters. This zone has sunlight and photosynthesis occurs, so this is a highly populated area in which many 
+                compounds exist. For example, phytoplankton exists below the detection range as the lowest level of the food web, and many sea life such as dolphins, sharks, and more commonplace fishes occupy this 
+                zone. This is where temperatures are accommodating and depths serve as primary production for other webs. Thus, to understand the oceans, one needs to understand this zone.</p>
+        </div>
+        <div id="mesopelagic" class="info">
+            <h2 id="title1" style="color: #03045e;">Mesopelagic Zone (The Twilight Zone)</h2>
+            <p>The Mesopelagic Zone - also known as the Twilight Zone - exists between 200 and 1,000 meters. It's relatively dark, as sunlight does not penetrate so deeply, and no photosynthesis occurs, which implies 
+                that creatures like squid, <a id="fish" href="https://en.wikipedia.org/wiki/Lanternfish">lanternfish</a>, and other bioluminescent beings are accustomed to the darkness and intense pressures. These animals are very resilient, and they tend to travel to the Sunlight
+                 Zone above for feeding during the night and return as they spawn during the daytime hours. In terms of carbon cycling, it's relative to how deep this zone is that organic matter falls, and it gets 
+                 eaten down here.</p>
+        </div>
+        <div id="bathypelagic" class="info">
+            <h2 id="title1" style="color: #03045e;">Bathypelagic Zone (The Midnight Zone)</h2>
+            <p>The Bathypelagic Zone—Midnight Zone—extends from 1,000 to 4,000 meters. This is the dark zone of no light. Chilly temperatures and high pressure mean that life is limited here (<a id="fish" href="https://en.wikipedia.org/wiki/Giant_squid">giant squid</a>, 
+                <a id="fish" href="https://en.wikipedia.org/wiki/Anglerfish">anglerfish</a>, and specific jellyfish are found even deeper) but those that make this zone their home include. Communication and feeding depend upon luminescence as so many creatures possess this 
+                feature. This zone is part of the deep-sea carbon sink as it gains organic material from above.</p>
+        </div>
+        <div id="abyssopelagic" class="info">
+            <h2 id="title1" style="color: #03045e;">Abyssopelagic Zone (The Abyss)</h2>
+            <p>The Abyssopelagic Zone (Abyss) extends from 4,000 to 6,000 meters. Cold temperatures just above freezing, immense pressure, and complete darkness characterize this zone. Compared to other areas of 
+                the ocean, there is not a lot of life here, and what can survive in these conditions is highly specialized. For instance, the deep sea <a id="fish" href="https://en.wikipedia.org/wiki/Anglerfish">anglerfish</a>, specific varieties of <a id="fish" href="https://en.wikipedia.org/wiki/Grimpoteuthis">abyssal octupus</a>, and a few 
+                <a id="fish" href="https://en.wikipedia.org/wiki/Echinoderm">echinoderms</a> thrive in this area. The ocean floor consists of an abyssal plain, a mostly flat region topped with silt-like sediments. This zone is one of the most inhospitable places on the planet.</p>
+        </div>
+        <div id="hadal" class="info">
+            <h2 id="title1" style="color: #03045e;">Hadal Zone (The Trenches)</h2>
+            <p>The Hadalpelagic Zone encompasses the deepest parts of the ocean, starting underneath 6000 m. This includes the Mariana Trench. With unimaginative pressure, frigid temperatures, and complete darkness, 
+                creatures that call this zone home include <a id="fish" href="https://en.wikipedia.org/wiki/Amphipoda">amphipods</a>, <a id="fish" href="https://en.wikipedia.org/wiki/Polychaete">polychaete worms</a>, and <a id="fish" href="https://en.wikipedia.org/wiki/Xenophyophorea">xenophyophores</a>. 
+                They exist in very specific forms for survival. This is the least explored zone of the ocean. Exploration of this zone helps scientists understand the possibilities of life in the most extreme situations.</p>
+        </div>
+    </div>
+    <br>
+    <br>
+
+
+    <!--Volcano-->
+    <h2 id="heading2">Underwater Volcanoes</h2>
+    <div class="volcano-text-container">
+        <div class="volcano-container">
+            <img src="Underwater-Volcano1.jpg" alt="Underwater Volcano" class="volcano" id="volcano">
+        </div>
+        <div class="text-container">
+            <p id="uwvolcano1"><b id="uwvolcano2">Underwater Volcanoes:</b> These are volcanoes that erupt beneath the ocean's surface, typically forming along mid-ocean ridges or hotspots. </p>
+            <p id="uwvolcano1"><b id="uwvolcano2">Formation:</b> They occur when magma rises from the Earth's mantle and escapes through the crust, creating new oceanic crust as it cools.</p>
+            <p id="uwvolcano1"><b id="uwvolcano2">Hydrothermal Vents:</b> Many underwater volcanoes have hydrothermal vents, which release mineral-rich water that supports several ecosystems.</p>
+            <p id="uwvolcano1"><b id="uwvolcano2">Impact on Marine Life:</b> The ecosystems around these vents are often teeming with life, including specialised bacteria, tubeworms and giant clams, which
+                 rely on chemosynthesis rather than photosynthesis.</p>
+            <p id="uwvolcano1"><b id="uwvolcano2">Volcanic Islands:</b> Sometimes, persistent underwater volcanic activity can lead to the formation of new islands when lava builds up enough to reach the 
+                ocean's surface.</p>
+        </div>
+    </div>
+    <br> 
+
+    <!-- Coral Reefs -->
+    <h2 id="heading2">Coral Reefs</h2>
+    <br>
+    <div id="para1div1">
+        <p id="para1">Coral reefs are diverse, underwater ecosystems formed by coral polyps, tiny marine animals that secrete calcium carbonate to build hard, protective structures. These habitats support a 
+            wide range of marine life and protect coastlines from erosion.</p>
+        <br>
+    </div>
+    <br>
+    <br>
+    <br>
+    <div class="text-and-image-boxes">
+        <div class="box">
+            <h3 id="headingthree">Fringing Reef</h3>
+            <p id="OLp2">Fringing reefs are coral reefs that grow directly along shorelines, forming in shallow waters close to land. These reefs are the most common type and form a direct connection with the 
+                shore. They thrive in warm, sunlit waters in places like the Caribbean, the Red Sea, and Southeast Asia.</p>
+                <br>
+            <div class="image-box">
+                <img src="fringingreef1.jpg" alt="Fringing Reef">
+            </div>
+            <br>
+        </div>
+        <br>
+        <br>
+        <div class="box">
+            <h3 id="headingthree">Barrier Reefs</h3>
+            <p id="OLp2">Barrier reefs are similar to fringing reefs but are separated from the coastline by a lagoon, allowing water to flow between them and land. These extensive structures, such as Australia's 
+                Great Barrier Reef, offer unique ecosystems and protection for marine life. They often occur in deeper tropical and subtropical waters.</p>
+            <br>
+            <div class="image-box">
+                <img src="barrierreef1.png" alt="Barrier Reef">
+        </div>
+            <br>
+            <br>
+        <div class="box">
+            <h3 id="headingthree">Atolls</h3>
+            <p id="OLp2">Atolls form from coral reefs growing around a volcanic island. As the island sinks or erodes, coral growth keeps pace with the descent, 
+                creating a ring-shaped structure with a central lagoon. Atolls are found mainly in tropical regions of the Indian and Pacific Oceans, famous atolls include those in the Maldives and Marshall Islands.</p>
+            <br>
+        </div>
+        <div class="image-box">
+            <img src="atoll1.jpg" alt="Atoll">
+        </div>
+            <br>
+            <br>
+            <div class="box">
+                <h3 id="headingthree">Ribbon Reefs</h3>
+                <p id="OLp2">Ribbon reefs are narrow, elongated reefs that form parallel to coastlines and can be part of larger reef systems. Often located in deeper areas beyond the main reef,
+                     they provide habitats for diverse marine life. They're found especially within the Great Barrier Reef, they create winding, ribbon-like formations in the sea.</p>
+                <br>
+            </div>
+            <div class="image-box">
+                <img src="ribbonreef.jpg" alt="Ribbon Reef">
+            </div>
+
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+            
+        <!--Marine Microbial Energy-->
+        <h2 id="heading2" style="width: 1000px;">Marine Microbial Energy</h2>
+        <br>
+        <br>
+        <br>
+        <h3 id="headingthree" style="color: #ddb892;">The Role of Marine Microbes in the Global Carbon System</h3>
+        <div class="container1">
+            <div class="image-row1">
+                <img src="phytoplankton1.jpg" alt="Phytoplankton">
+                <img src="cyanobacteria1.jpg" alt="Cyanobacteria">
+            </div>
+            <div class="text-row1a">
+                <div class="text-block1a">
+                    <p><span id="span1" style="font-weight:bold">Primary Production:</span>
+                        <p>
+                            <span style="font-weight:bold">Phytoplankton:</span> These are minute algae and include the primary producers of the ocean, which convert CO₂ to organic carbon through photosynthetic 
+                            action. The process not only yields oxygen but also forms the base of the marine food web.
+                        </p>
+                        <p>
+                            <span style="font-weight:bold">Cyanobacteria:</span> These are a group of photosynthetic bacteria, with Prochlorococcus and Synechococcus being among the most abundant forms of life on 
+                            Earth. They represent a significant proportion of carbon fixation, particularly in nutrient-poor oceanic regions.
+                        </p>
+                    </p>
+                </div>
+                <div class="text-block1a">
+                    <p><span id="span1" style="font-weight:bold">Carbon Sequestration:</span>
+                        <p>
+                            <span style="font-weight:bold">Biological Pump:</span> A process by which organic carbon, produced by phytoplankton, sinks from the surface to the deep ocean. This "pumping" of carbon 
+                            from surface waters to deep-sea environments helps sequester carbon for centuries or longer and thus is an important part of regulating atmospheric CO₂ levels.
+                        </p>
+                        <p>
+                            <span style="font-weight:bold">Microbial Decomposition:</span> Upon the death of marine organisms, bacteria degrade organic material back to CO₂, nutrients, and other forms of inorganic 
+                            carbon. A portion of this carbon is remineralized at or near the surface, while the remainder is buried in deep-sea sediments, effectively removing it from the carbon cycle for long 
+                            periods of time.
+                        </p>
+                    </p>
+                </div>
+
+                <div class="text-block1a">
+                     <span id="span1" style="font-size: 16px; color: #03045e; font-weight:bold; font-family: Poppins, sans-serif;">Methanogenesis and Methane Oxidation:</span>
+                        <p>
+                            <span style="font-weight:bold">Archaea</span> In anaerobic conditions, which provide especially enriched deep-sea sediments, Archaea produce CH₄ by methanogenesis. Methane is a 
+                            potent greenhouse gas, and its release from the ocean might have an important effect on climate.
+                        </p>
+                        <p>
+                            <span style="font-weight:bold">Methane Oxidising Bacteria:</span> Some bacteria, including those of the family Methylococcaceae, consume methane before it escapes into the atmosphere,
+                             mitigating the potential impact of methane release.
+                        </p>
+                    
+                </div>
+            </div>
+        </div>
+        <br>
+        <br>
+        <h3 id="headingthree" style="color: #ddb892;">Relationships Between Marine Microbes and Larger Marine Organisms</h3>
+        <div class="container1">
+            <div class="image-row1">
+                <img src="marinesnow1.jpg" alt="Marine Snow">
+                <img src="Hydrothermal Vent Communities1.jfif" alt="Hydrothermal Vents">
+            </div>
+            <div class="text-row1a">
+                <div class="text-block1a">
+                    <p><span id="span1" style="font-weight:bold">Symbiotic Relationships:</span>
+                        <p>
+                            <span style="font-weight:bold">Coral and Zooxanthellae:</span> Corals form a mutualistic relationship with photosynthetic dinoflagellates called zooxanthellae. The microbes provide the 
+                            coral with organic compounds produced through photosynthesis, while the coral offers a protected environment and nutrients.</p>
+                        <p>
+                            <span style="font-weight:bold">Hydrothermal Vent Communities:</span>  Giant tube worms, Riftia pachyptila, found at deep-sea hydrothermal vents, have symbiotic bacteria living within 
+                            their tissues. These bacteria oxidize hydrogen sulfide abundant in the vent fluids into organic compounds that provide nutrition to the host worm.</p>
+                    </p>
+                </div>
+                <div class="text-block1a">
+                    <p><span id="span1" style="font-weight:bold">Marine Snow and Particle-Associated Microbes:</span>
+                        <p>
+                            <span style="font-weight:bold">Marine Snow:</span> This is the continuous shower of mainly organic detritus falling from the upper layers of the water column. Marine microbes colonise 
+                            these particles, breaking down complex organic molecules, which makes the nutrients available to other organisms including filter feeders and scavengers.</p>
+                        <p>
+                            <span style="font-weight:bold">Microbial Loops:</span>  Bacteria and other microorganisms decompose organic matter, releasing back nutrients (like nitrogen and phosphorus) into the water, 
+                            which are recycled by phytoplankton and other primary producers; this nutrient loop is helpful to maintain productivity in oligotrophic waters that are normally starved of high nutrient 
+                            availability.</p>
+                    </p>
+                </div>
+                <div class="text-block1a">
+                    <p><span id="span1" style="font-weight:bold">Microbial Pathogens:</span>
+                        <p>Some marine microbes can be pathogenic, affecting larger marine organisms. For example, certain vibrio species can cause disease in fish, shellfish, and even humans. Pathogenic microbes 
+                            can influence population dynamics and ecosystem health by causing disease outbreaks.</p>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <br>
+        <br>
+        <h3 id="headingthree" style="color: #ddb892;">Key Challenges and Future Directions</h3>
+        <div class="container1">
+            <div class="image-row1">
+                <img src="coral2.jpg" alt="Coral Reefs">
+                <img src="ClimateChangeOcean1.jpg" alt="Coral Reef Diving">
+            </div>
+            <div class="text-row1a">
+                <div class="text-block1a">
+                    <p><span id="span1" style="font-weight:bold">Understanding Complexity</span>
+                        <p> Marine microbial communities are incredibly complex, with thousands of different species interacting in ways that are yet to be fully understood. Developing models that accurately 
+                            represent these interactions is a major challenge.</p>
+                </div>
+                <div class="text-block1a">
+                    <p><span id="span1" style="font-weight:bold">Impacts of Human Actions</span>
+                        <p> Pollution, overfishing, and climate change are altering marine ecosystems, with potentially profound effects on microbial communities and the global carbon cycle.</p>
+                </div>
+                <div class="text-block1a">
+                    <p><span id="span1" style="font-weight:bold">Conservation Implications</span>
+                        <p> Protecting marine microbial diversity is crucial for maintaining the health of the ocean and its ability to regulate global climate. Conservation efforts must consider the roles of 
+                            microbes in maintaining ecosystem services.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a href="deep_sea_discovery_climate_change.html"><h3 id="headingthree" style="color: #ddb892;" class="link2">So, How Can I Support Ocean Coservation? --> </h3></a>
+
+
+
+    <!--JavaScript-->
+    <script src="deep_sea_discovery_marine_bio_js.js"></script>
+    <!--jQuery first, then Popper.js, then Bootstrap JS-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+
+    <script>
+        //Ocean Zones Code
+        function showInfo(zone) {
+            var infos = document.getElementsByClassName('info');
+            for (var i = 0; i < infos.length; i++) {
+                infos[i].style.display = 'none';
+            }
+            document.getElementById(zone).style.display = 'block';
+        }
+    </script>
+    <script>
+        //Navbar Code
+        $(function () {
+            $(document).scroll(function () {
+                var $nav = $("#mainNavbar");
+                $nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height());
+            });
+        });
+    </script>
+
+</body>
+</html>
+

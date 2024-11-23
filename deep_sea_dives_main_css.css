@@ -1,0 +1,299 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    scroll-behavior: smooth;
+    overflow: scroll;  
+    scrollbar-width: none;  
+    cursor: none;
+    background-color: #cce5eb;
+    text-align: center; 
+}  
+
+p {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+::selection {
+    background-color: #8ecae6;
+    color: #03045e;
+}
+
+/*Intro Section*/
+#intro {
+    height: 100vh;
+    background: url('underwater1.jpg') no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 3rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    color: white;
+    text-shadow: 0px 4px 8px rgba(0, 0, 0, 1);
+    text-align: center;
+}
+
+#intro h1 {
+    font-size: 3rem;
+    font-size: 100px;
+    animation: fadeIn 2s ease-out;
+    font-family: "Signika", sans-serif;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}  
+
+section p {
+    position: relative;
+    z-index: 2; 
+    max-width: 650px; 
+    width: 100%; 
+    margin-left: 0; 
+    margin-right: 0; 
+    background-color: rgba(0, 0, 0, 0.5); 
+    border-radius: 8px;
+    padding: 15px;
+    color: white;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    line-height: 1.8;
+    text-align: justify; 
+}
+
+h2 {
+    font-size: 2.5rem;
+    color: white;
+    text-align: left; 
+    padding: 10px;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.6);
+    font-family: "Signika", sans-serif;
+    font-size: 80px;
+}
+
+#about h2 {
+    text-align: left;
+}
+
+#projects h2 {
+    text-align: right;
+}
+
+#contact h2 {
+    text-align: left;
+}
+
+#about p {
+    text-align: left; 
+}
+
+#projects p {
+    text-align: right;
+    margin-left: auto; 
+    margin-right: 0;  
+}
+
+#contact p {
+    text-align: left; 
+}
+
+
+/* Section styles */
+section {
+    padding: 50px 20px;
+    z-index: 1;
+    position: relative;
+}
+
+.about, .projects, .contact {
+    min-height: 100vh;
+    position: relative;
+}
+
+.about {
+    background: url('whalesdiving.jpg') no-repeat center center/cover;
+}
+
+.projects {
+    background: url('discovery.jpg') no-repeat center center/cover;
+}
+
+.contact {
+    background: url('shipwreck.jpg') no-repeat center center/cover;
+}  
+
+.fade-in {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+/* Footer */
+footer {
+    background-color: #ffbf69;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}  
+
+footer a {
+    color: white;
+    text-decoration: underline;
+}
+
+footer a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+
+/* Navbar CSS */
+#mainNavbar {    
+    font-size: 1.5rem;
+    font-weight: 100;
+}
+
+#mainNavbar .nav-link{
+    color: white;
+}
+
+#mainNavbar .nav-link:hover{
+    color: #03045e;
+}
+
+#mainNavbar .navbar-brand {
+    color: #03045e;
+    font-size: 1.5rem;
+}
+
+#headingGroup span {
+    color: #03045e;
+}
+
+#headingGroup h1 {
+    font-weight: 100;
+    font-size: 4rem;
+}
+
+.navbar.scrolled {
+    background: #ffbf69;
+    transition: background 890ms;
+}
+
+
+/*Coral Reef Marine Biology Shortcut*/
+#coral-reefs {
+    position: relative;
+    height: 100vh;
+    background: url('jellyfish1.jpg') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#coral-reefs .content-wrapper {
+    color: white;
+    text-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+#coral-reefs h1 {
+    font-size: 3rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    font-family: "Signika", sans-serif;
+    font-size: 75px;
+}
+
+#coral-reefs h1:hover {
+    transform: scale(1.1);
+    opacity: 0.9;
+}
+
+.cta-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    background-color: #ff9f1c;
+    font-size: 50px;
+    font-family: "Signika", sans-serif;
+    color: white;
+    font-weight: 600;
+    font-size: 1.25rem;
+    padding: 10px 20px;
+    width: 300px;
+    height: 70px;
+    border-radius: 30px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.cta-link span {
+    margin-right: 10px;
+}
+
+.cta-link:hover {
+    background-color: #ffbf69;
+    color: white;
+    transform: translateY(-5px);
+}
+
+.cta-link svg {
+    fill: white;
+    transition: transform 0.3s ease;
+}
+
+.cta-link:hover svg {
+    transform: translateX(5px);
+}
+
+
+/*Cursor*/
+button, a {
+    cursor: none;
+    outline: none;
+}
+
+#cursor {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: #ffbf69;
+    border-radius: 50%;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+    border: 3px solid transparent;
+    transition: all 0.1s ease;  
+}
+
+#cursor.hovered {
+    width: 40px;
+    height: 40px;
+}
+
+#cursor.clicked {
+    background-color: #03045e;
+    width: 50px;
+    height: 50px;
+    border-color: transparent;
+}

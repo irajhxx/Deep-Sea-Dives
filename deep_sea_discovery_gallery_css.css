@@ -1,0 +1,182 @@
+/*Main*/
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to top, #023e8a, #caf0f8);
+    background-attachment: fixed;
+    background-size: cover;
+    overflow: auto;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    cursor: none;
+}
+
+::selection {
+    background-color: #8ecae6;
+    color: #03045e;
+}
+
+.image-container {
+    position: relative;
+    width: 30%;
+    display: inline-block;
+    margin: 10px;
+}
+
+img {
+    transition: opacity 0.3s ease; 
+    width: 550px; 
+    height: 550px; 
+    object-fit: cover; 
+    transition: opacity 0.3s ease;
+    margin: 10px; 
+    margin-left: 55px;
+}
+
+.title {
+    color: #e1e5f2;
+    line-height: 2.0;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.animal-name {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 1.5rem;
+    font-size: 60px;
+    font-family: "Nunito", sans-serif;
+    display: none;
+    text-align: center;
+    margin-left: 40px;
+}
+
+.image-container:hover img {
+    opacity: 0;
+}
+
+.image-container:hover .animal-name {
+    display: block;
+} 
+
+/* Navbar*/
+#mainNavbar {    
+    font-size: 1.5rem;
+    font-weight: 100;
+}
+
+#mainNavbar .nav-link {
+    color: white;
+}
+
+#mainNavbar .nav-link:hover {
+    color: #03045e;
+}
+
+#mainNavbar .navbar-brand {
+    color: #03045e;
+    font-size: 1.5rem;
+}
+
+.navbar.scrolled {
+    background: #ffbf69;
+    transition: background 890ms;
+}
+
+@media (max-width: 1200px) {
+    #headingGroup h1 {
+        font-weight: 100;
+        font-size: 3rem;
+    }
+} 
+
+
+/*Cursor*/
+button, a {
+    cursor: none;
+    outline: none;
+}
+
+#cursor {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: #ffbf69;
+    border-radius: 50%;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+    border: 3px solid transparent;
+    transition: all 0.1s ease;  
+}
+
+#cursor.hovered {
+    width: 40px;
+    height: 40px;
+}
+
+#cursor.clicked {
+    background-color: #03045e;
+    width: 50px;
+    height: 50px;
+    border-color: transparent;
+}
+
+
+/*Bottom Bar*/
+.bottom-bar {
+    background-color: #ffbf69;
+    color: black;
+    padding: 10px 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    position: relative; 
+    margin-top: 50px;
+    font-family: "Nunito", sans-serif; 
+    font-weight: 700;
+}
+
+.bottom-bar p {
+    color: black;
+    text-decoration: none;
+    font-style: italic;
+    margin: 0 20px;
+    font-family: "Nunito", sans-serif; 
+}
+
+.left-section, .center-section, .right-section {
+    flex: 1;
+    font-family: "Nunito", sans-serif; 
+}
+
+.center-section {
+    text-align: center;
+    font-family: "Nunito", sans-serif; 
+}
+
+.left-section, .right-section {
+    text-align: left;
+    padding: 0 20px;
+    font-family: "Nunito", sans-serif; 
+}
+
+.bottom-bar {
+    font-family: "Nunito", sans-serif; 
+}
+
+.bottom-bar span {
+    margin: 0 20px;
+    font-family: "Nunito", sans-serif; 
+}
+
+.bottom-bar a {
+    text-decoration: underline;
+    color: black;
+}

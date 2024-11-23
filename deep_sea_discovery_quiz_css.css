@@ -1,0 +1,352 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+::selection {
+    background-color: #8ecae6;
+    color: #03045e;
+    text-shadow: white -3px 3px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    align-items: center;
+    text-align: center;
+    background-color: #f4f4f4;
+    background: center/cover url("https://images.unsplash.com/photo-1452723312111-3a7d0db0e024?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    cursor: none;
+    overflow: none;  
+}
+
+
+.entry {
+    background-color: #015177;
+    color: white;
+    font-family: "Ribeye Marrow", serif;
+    text-shadow: black -3px 3px;
+    font-weight: 400;
+    font-size: 60px;
+    margin-bottom: 20px;
+    font-size: 100;
+    font-style: normal;
+    align-items: center;
+    text-align: center;
+}
+
+.quiz-container {
+    background-color: #015177;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 1200px;
+    text-align: center;
+    position: relative;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+#score {
+    font-size: 16px;
+}
+
+#question-number {
+    font-size: 18px;
+}
+
+.timer-bar {
+    height: 8px;
+    background-color: #fb8500;
+    width: 100%;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+
+.start-button-container {
+    border-radius: 20px;
+    padding-top: 40px;
+    width: 1500px;
+    height: 300px;
+    text-align: center;
+    margin-top: 20px;
+    background-color: #015177;
+}
+
+.heading1 {
+    color: white;
+    font-family: "Ribeye Marrow", serif;
+    text-shadow: black -3px 3px;
+    font-weight: 400;
+    font-size: 40px;
+    margin-bottom: 20px;
+    font-size: 100;
+    font-style: normal;
+    align-items: center;
+    text-align: center;
+}
+
+.question {
+    margin: 20px 0;
+    font-size: 18px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.options-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.option {
+    width: 48%;
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 10px;
+    border: none;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    background-color: #62b6cb;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.option:hover {
+    background-color: #bee9e8;
+    color: #015177;
+}
+
+.correct {
+    background-color: #4caf50;
+}
+
+.correct:hover {
+    background-color: #4caf50;
+}
+
+.wrong {
+    background-color: #f44336;
+}
+
+.wrong:hover {
+    background-color: #f44336;
+}
+
+.hidden {
+    display: none;
+}
+
+#result-modal {
+    position: fixed; 
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 80%; 
+    max-width: 400px; 
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+}
+
+#play-again {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#play-again:hover {
+    background-color: #45a049;
+}
+
+
+/*Button*/
+.begin {
+    font-size: 50px;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border: 2px solid #fff;
+    padding: 10px 40px;
+    position: relative;
+    overflow: hidden;
+    transition: color 0.4s ease;
+}
+
+.begin::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background: #fff;
+    top: 0;
+    left: -100%;
+    transition: left 0.4s ease;
+}
+
+.begin::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background: #fff;
+    bottom: 0;
+    right: -100%;
+    transition: right 0.4s ease;
+}
+
+.begin:hover::before {
+    left: 0;
+}
+
+.begin:hover::after {
+    right: 0;
+}
+
+.begin:hover {
+    color: #000;
+    text-shadow: #fff -3px 3px;
+    transition: color 0.3s ease;
+}
+
+
+/* Navbar CSS */
+#mainNavbar {
+    font-size: 1.5rem;
+    font-weight: 100;
+}
+
+#mainNavbar .nav-link {
+    color: white;
+}
+
+#mainNavbar .nav-link:hover {
+    color: #03045e;
+}
+
+#mainNavbar .navbar-brand {
+    color: #03045e;
+    font-size: 1.5rem;
+}
+
+#headingGroup span {
+    color: #03045e;
+}
+
+#headingGroup h1 {
+    font-weight: 100;
+    font-size: 4rem;
+}
+
+.navbar.scrolled {
+    background: #ffbf69;
+    transition: background 890ms;
+}
+
+
+/*Cursor*/
+button, a, .option, #play-again {
+    cursor: none;
+    outline: none;
+}
+
+#cursor {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: #ffbf69;
+    border-radius: 50%;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+    border: 3px solid transparent;
+    transition: all 0.1s ease;  
+}
+
+#cursor.hovered {
+    width: 40px;
+    height: 40px;
+}
+
+#cursor.clicked {
+    background-color: #03045e;
+    width: 50px;
+    height: 50px;
+    border-color: transparent;
+}
+
+
+/*Bottom Bar*/
+.bottom-bar {
+    background-color: #ffbf69;
+    color: black;
+    padding: 10px 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    position: relative; 
+    margin-top: 50px;
+    font-family: "Nunito", sans-serif; 
+    font-weight: 700;
+}
+
+.bottom-bar p {
+    color: black;
+    text-decoration: none;
+    font-style: italic;
+    margin: 0 20px;
+    font-family: "Nunito", sans-serif; 
+}
+
+.left-section, .center-section, .right-section {
+    flex: 1;
+    font-family: "Nunito", sans-serif; 
+}
+
+.center-section {
+    text-align: center;
+    font-family: "Nunito", sans-serif; 
+}
+
+.left-section, .right-section {
+    text-align: left;
+    padding: 0 20px;
+    font-family: "Nunito", sans-serif; 
+}
+
+.bottom-bar {
+    font-family: "Nunito", sans-serif; 
+}
+
+.bottom-bar span {
+    margin: 0 20px;
+    font-family: "Nunito", sans-serif; 
+}
+
+.bottom-bar a {
+    text-decoration: underline;
+    color: black;
+}

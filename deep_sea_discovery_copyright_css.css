@@ -1,0 +1,118 @@
+body {
+    background-color: #f0ebd8;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    scroll-behavior: smooth;
+    text-align: center; 
+    align-items: center;
+    cursor: none;
+}
+
+::selection {
+    background-color: #8ecae6;
+    color: #03045e;
+}
+
+.copyright-info {
+    font-family: "Nunito", sans-serif;
+    text-align: left;
+    font-weight: 700;
+}
+
+.copyright-box {
+    padding-left: 20px;
+    width: 1800px;
+}
+
+@media (max-width: 768px) {
+    .copyright-box {
+        grid-template-columns: 1fr; 
+    }
+}
+
+/* Navbar*/
+#mainNavbar {    
+    font-size: 1.5rem;
+    font-weight: 100;
+}
+
+#mainNavbar .nav-link {
+    color: white;
+}
+
+#mainNavbar .nav-link:hover {
+    color: #03045e;
+}
+
+#mainNavbar .navbar-brand {
+    color: #03045e;
+    font-size: 1.5rem;
+}
+
+.navbar.scrolled {
+    background: #ffbf69;
+    transition: background 890ms;
+}
+
+@media (max-width: 1200px) {
+    #headingGroup h1 {
+        font-weight: 100;
+        font-size: 3rem;
+    }
+}
+
+
+/* Footer */
+footer {
+    background-color: #ffbf69;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}  
+
+footer a {
+    color: white;
+    text-decoration: underline;
+}
+
+footer a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+
+/*Cursor*/
+button, a {
+    cursor: none;
+    outline: none;
+}
+
+#cursor {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: #ffbf69;
+    border-radius: 50%;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+    border: 3px solid transparent;
+    transition: all 0.1s ease;  
+}
+
+#cursor.hovered {
+    width: 40px;
+    height: 40px;
+}
+
+#cursor.clicked {
+    background-color: #03045e;
+    width: 50px;
+    height: 50px;
+    border-color: transparent;
+}
