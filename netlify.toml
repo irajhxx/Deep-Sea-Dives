@@ -1,0 +1,4 @@
+[[redirects]]
+from = "/*"
+to = "/deep_sea_dives_main.html"
+status = 200
