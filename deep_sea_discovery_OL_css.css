@@ -332,6 +332,8 @@ p {
     cursor: pointer;
 }
 
+
+/*Waves*/
 .wave-container {
     position: fixed;
     bottom: 0;
@@ -341,16 +343,15 @@ p {
     overflow: hidden;
 }
 
-
-/*Waves*/
 .wave {
     background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="%23a9d6e5" fill-opacity="1" d="M0,256 C300,320 600,160 900,256 C1200,352 1500,160 1800,256 L1800,320 L0,320 Z"></path></svg>') repeat-x;
-    position: absolute;
+    position: fixed; 
     left: 0;
     bottom: 0;
     width: 200%; 
-    height: 100%;
+    height: 100px; 
     animation: waveAnimation 10s linear infinite;
+    z-index: -1; 
 }
 
 @keyframes waveAnimation {
@@ -362,8 +363,94 @@ p {
     }
 }
 
+
+/*Word Search*/
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(12, 40px);
+    gap: 2px;
+    margin-bottom: 20px;
+}
+
+.grid-cell {
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    background-color: #e1e5f2;
+    border: 1px solid #ddd;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+}
+
+.grid-cell.selected {
+    background-color: #ffb700;
+}
+
+.grid-cell.found {
+    background-color: #31572c;
+    color: white;
+}
+
+#wordList {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    color: #03045e;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+#heading6 {
+    color: #fff;
+    font-family: "Signika", sans-serif;
+    font-weight: 600;
+    font-size: 30px;
+    background-color: #f77f00;
+}
+
+#wordList li {
+    font-size: 18px;
+    margin: 5px 0;
+}
+
+#wordList li.found {
+    text-decoration: line-through;
+    color: #31572c;
+    font-weight: bold;
+}
+
+.hint {
+    background-color: #f77f00;
+}
+
+#controls {
+    margin-top: 20px;
+}
+
+#hintBtn, #restartBtn {
+    padding: 4px 8px;
+    font-size: 20px;
+    z-index: 10;
+    position: relative;
+    font-weight: 600;
+    padding: 1rem 3rem;
+    margin: 3rem 1rem;
+    border: none;
+    color: #fff;
+    border-radius: 10rem;
+    cursor: pointer;
+    background-color: #f77f00;
+}
+
+
 /*Cursor*/
-button, a, .turtle, .btn1 {
+button, a, .turtle, .btn1, .grid-container, #restartBtn, #hintBtn, .grid-cell, .grid-cell.selected, .grid-cell.found {
     cursor: none;
     outline: none;
 }
@@ -393,59 +480,4 @@ button, a, .turtle, .btn1 {
     border-color: transparent;
 }
 
-
-/*Bottom Bar*/
-.bottom-bar {
-    background-color: #ffbf69;
-    color: black;
-    padding: 10px 0;
-    width: 100%;
-    width: 2000px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 16px;
-    position: relative; 
-    margin-top: 50px;
-    font-family: "Nunito", sans-serif; 
-    font-weight: 700;
-}
-
-.bottom-bar p {
-    color: black;
-    text-decoration: none;
-    font-style: italic;
-    margin: 0 20px;
-    font-family: "Nunito", sans-serif; 
-}
-
-.left-section, .center-section, .right-section {
-    flex: 1;
-    font-family: "Nunito", sans-serif; 
-}
-
-.center-section {
-    text-align: center;
-    font-family: "Nunito", sans-serif; 
-}
-
-.left-section, .right-section {
-    text-align: left;
-    padding: 0 20px;
-    font-family: "Nunito", sans-serif; 
-}
-
-.bottom-bar {
-    font-family: "Nunito", sans-serif; 
-}
-
-.bottom-bar span {
-    margin: 0 20px;
-    font-family: "Nunito", sans-serif; 
-}
-
-.bottom-bar a {
-    text-decoration: underline;
-    color: black;
-}
 
