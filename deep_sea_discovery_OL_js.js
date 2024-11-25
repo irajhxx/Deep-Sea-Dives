@@ -27,10 +27,11 @@ document.addEventListener('click', () => {
 
 
 //Word Search
-const words = [
+const originalWords = [
     "SHARK", "ANGLERFISH", "OCTOPUS", "CORAL", "TURTLE", "KELP",
     "ZONE", "BIOLUMINESCENCE", "CAMOUFLAGE", "ADAPTATION", "HABITATS", "OCEAN"
 ];
+let words = [...originalWords];
 
 const gridSize = 12;
 let grid = Array.from({ length: gridSize }, () => Array(gridSize).fill(''));
@@ -54,6 +55,7 @@ function initializeGrid() {
     placedWords = [];
     hintUsed = false;
     hintWord = null;
+    words = [...originalWords];
     words.forEach(word => placeWord(word));
     for (let row = 0; row < gridSize; row++) {
         for (let col = 0; col < gridSize; col++) {
@@ -83,7 +85,7 @@ function renderGrid() {
 
 function renderWordList() {
     wordListElement.innerHTML = '';
-    words.forEach(word => {
+    originalWords.forEach(word => {
         const listItem = document.createElement("li");
         listItem.textContent = word;
         listItem.classList.add('word-item');
@@ -95,7 +97,6 @@ function placeWord(word) {
     let placed = false;
     const maxAttempts = 100;
     let attempts = 0;
-
     while (!placed && attempts < maxAttempts) {
         attempts++;
         const direction = directions[Math.floor(Math.random() * directions.length)];
@@ -143,34 +144,48 @@ gridElement.addEventListener("click", event => {
     } else {
         selectedCells.push({ row, col });
     }
-
     checkSelection();
 });
 
-
 function checkSelection() {
     const selectedWord = selectedCells.map(cell => grid[cell.row][cell.col]).join("");
-    const reverseWord = selectedWord.split("").reverse().join("");
-
-    const matchedWord = words.find(word => 
-        word === selectedWord || word === reverseWord
-    );
+    const letterCounts = countLetters(selectedWord);
+    const matchedWord = words.find(word => {
+        const wordCounts = countLetters(word);
+        return areCountsEqual(letterCounts, wordCounts);
+    });
     if (matchedWord) {
         selectedCells.forEach(cell => {
             const cellDiv = document.querySelector(`[data-row='${cell.row}'][data-col='${cell.col}']`);
             cellDiv.classList.remove("selected", "hint");
             cellDiv.classList.add("found");
         });
-
         const wordItem = Array.from(wordListElement.children).find(li => li.textContent === matchedWord);
         if (wordItem) {
             wordItem.classList.add("found");
         }
-
         words.splice(words.indexOf(matchedWord), 1);
         selectedCells = [];
-        if (hintWord === matchedWord) hintWord = null; 
+        if (hintWord === matchedWord) hintWord = null;
     }
+}
+
+function countLetters(word) {
+    return word.split("").reduce((counts, letter) => {
+        counts[letter] = (counts[letter] || 0) + 1;
+        return counts;
+    }, {});
+}
+
+function areCountsEqual(count1, count2) {
+    const keys1 = Object.keys(count1);
+    const keys2 = Object.keys(count2);
+
+    if (keys1.length !== keys2.length) return false;
+    for (const key of keys1) {
+        if (count1[key] !== count2[key]) return false;
+    }
+    return true;
 }
 
 restartBtn.addEventListener('click', initializeGrid);
