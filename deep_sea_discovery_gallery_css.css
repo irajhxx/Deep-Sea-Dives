@@ -63,6 +63,32 @@ img {
     display: block;
 } 
 
+@media (max-width: 768px) {
+    .image-container {
+        width: 90%; 
+        margin: 20px auto; 
+        display: block; 
+    }
+
+    img {
+        width: 100%; 
+        height: auto; 
+        margin: 0; 
+    }
+
+    .animal-name {
+        font-size: 24px; 
+        top: 50%; 
+        left: 50%; 
+        transform: translate(-50%, -50%);
+        margin: 0; 
+    }
+
+    body {
+        font-size: 16px; 
+    }
+}
+
 /* Navbar*/
 #mainNavbar {    
     font-size: 1.5rem;
