@@ -27,8 +27,13 @@ body {
 }
 
 @media (max-width: 768px) {
+    .copyright-info {
+        font-size: 30px; 
+        text-align: left;
+    }
+
     .copyright-box {
-        grid-template-columns: 1fr; 
+        width: auto; 
     }
 }
 
