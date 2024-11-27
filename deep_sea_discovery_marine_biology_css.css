@@ -135,7 +135,7 @@ p {
 }
 
 
-/* Interactive Ocean Zone Image CSS */
+/*Ocean Zone Image CSS */
 .container {
     position: relative;
     width: 100%;
@@ -207,6 +207,38 @@ p {
 #uwvolcano2 {
     text-decoration: underline;
     color: #f0ebd8;
+}
+
+@media (max-width: 768px) {
+    .volcano-text-container {
+        flex-direction: column; 
+        padding: 20px; 
+        max-width: 100%; 
+    }
+
+    .volcano-container {
+        padding-right: 0; 
+        margin-bottom: 20px; 
+    }
+
+    .volcano {
+        width: 100%; 
+        height: auto; 
+    }
+
+    .text-container {
+        padding-left: 0; 
+        font-size: 16px; 
+        text-align: justify; 
+    }
+
+    #uwvolcano1 {
+        font-size: 14px; 
+    }
+
+    #uwvolcano2 {
+        font-size: 14px; 
+    }
 }
 
 
