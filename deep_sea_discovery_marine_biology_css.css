@@ -9,6 +9,7 @@ body {
     background: #000; 
     min-height: 100%;
     cursor: none;
+    overflow-x: hidden;
 }
 
 ::selection {
