@@ -19,7 +19,6 @@ hoverElements.forEach(element => {
 
 document.addEventListener('click', () => {
     cursor.classList.add('clicked');
-
     setTimeout(() => {
         cursor.classList.remove('clicked');
     }, 200);
@@ -103,7 +102,6 @@ function placeWord(word) {
         const rowStart = Math.floor(Math.random() * gridSize);
         const colStart = Math.floor(Math.random() * gridSize);
         let row = rowStart, col = colStart;
-
         let fits = true;
         for (let i = 0; i < word.length; i++) {
             if (
@@ -133,11 +131,9 @@ function placeWord(word) {
 gridElement.addEventListener("click", event => {
     const cell = event.target;
     if (!cell.dataset.row || !cell.dataset.col) return;
-
     cell.classList.toggle("selected");
     const row = +cell.dataset.row;
     const col = +cell.dataset.col;
-
     const index = selectedCells.findIndex(c => c.row === row && c.col === col);
     if (index > -1) {
         selectedCells.splice(index, 1);
@@ -180,7 +176,6 @@ function countLetters(word) {
 function areCountsEqual(count1, count2) {
     const keys1 = Object.keys(count1);
     const keys2 = Object.keys(count2);
-
     if (keys1.length !== keys2.length) return false;
     for (const key of keys1) {
         if (count1[key] !== count2[key]) return false;
