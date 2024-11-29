@@ -337,8 +337,72 @@ p {
 .fade-in {
     opacity: 1 !important;
 }
+@media (max-width: 768px) {
+    .careerswelcome {
+        font-size: 40px;
+    }
+
+    #para1 {
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    .container {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .image-section, .text-section, 
+    .image-section2, .text-section2 {
+        flex: 1 1 100%;
+        max-width: 100%;
+        padding: 0;
+        text-align: center;
+    }
+
+    .image-section img, 
+    .image-section2 img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .info-section {
+        flex-direction: column;
+    }
+
+    .info-box {
+        flex: 1 1 100%;
+        margin: 10px 0;
+    }
+
+    .info-section b {
+        font-size: 10px;
+    }
+
+    .MB1 {
+        font-size: 30px;
+    }
+
+    .info-box h2 {
+        font-size: 30px;
+    }
+
+    .info-box h3 {
+        font-size: 24px;
+    }
+
+    .info-box p.countries1, 
+    .info-box strong {
+        font-size: 18px;
+    }
+
+    .credits {
+        font-size: 14px;
+    }
+}
 
 
+/*Cursor*/
 button, a, .bubble, .pop {
     cursor: none;
     outline: none;
