@@ -84,7 +84,6 @@ function loadQuestion() {
         option.addEventListener('click', checkAnswer);
     });
     questionNumberElement.innerText = `Q ${currentQuestion + 1}/10`;
-
     startTimer();
 }
 
@@ -107,7 +106,6 @@ function checkAnswer(event) {
     const selectedOption = event.target;
     const answerIndex = questions[currentQuestion].answer;
     const selectedIndex = parseInt(selectedOption.getAttribute("data-index"));
-
     if (selectedIndex === answerIndex) {
         selectedOption.classList.add("correct");
         score++;
