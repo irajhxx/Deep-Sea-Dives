@@ -19,7 +19,6 @@ hoverElements.forEach(element => {
 
 document.addEventListener('click', () => {
     cursor.classList.add('clicked');
-
     setTimeout(() => {
         cursor.classList.remove('clicked');
     }, 200);
