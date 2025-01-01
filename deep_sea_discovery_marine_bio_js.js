@@ -35,7 +35,6 @@ function populateStars(numStars) {
 }
 
 function addMoreStarsOnScroll() {
-    
     if (window.scrollY > starCount * 200) {
         populateStars(50); 
         starCount++;
@@ -45,6 +44,7 @@ function addMoreStarsOnScroll() {
 populateStars(100);
 starCount++;
 window.addEventListener('scroll', addMoreStarsOnScroll);
+
 
 //Cursor
 const cursor = document.getElementById("cursor");
@@ -59,7 +59,6 @@ hoverElements.forEach(element => {
     element.addEventListener('mouseenter', () => {
         cursor.classList.add('hovered');
     });
-
     element.addEventListener('mouseleave', () => {
         cursor.classList.remove('hovered');
     });
@@ -67,7 +66,6 @@ hoverElements.forEach(element => {
 
 document.addEventListener('click', () => {
     cursor.classList.add('clicked');
-
     setTimeout(() => {
         cursor.classList.remove('clicked');
     }, 200);
