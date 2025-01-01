@@ -11,7 +11,6 @@ hoverElements.forEach(element => {
     element.addEventListener('mouseenter', () => {
         cursor.classList.add('hovered');
     });
-
     element.addEventListener('mouseleave', () => {
         cursor.classList.remove('hovered');
     });
@@ -19,7 +18,6 @@ hoverElements.forEach(element => {
 
 document.addEventListener('click', () => {
     cursor.classList.add('clicked');
-
     setTimeout(() => {
         cursor.classList.remove('clicked');
     }, 200);
